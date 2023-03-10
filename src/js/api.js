@@ -5,7 +5,7 @@ import create404 from './404';
 import createWidget from './widget';
 
 async function getWeather({ latitude, longitude }) {
-  const data = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`);
+  const data = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`);
   const json = await data.json();
 
   await removeLoader();

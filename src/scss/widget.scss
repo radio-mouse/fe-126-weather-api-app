@@ -16,4 +16,65 @@
   font-weight: 300;
 }
 
+.slider {
+  display: flex;
+  gap: 2px;
+  overflow: auto;
+  padding-top: 24px;
+  width: 100%;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slide {
+  scroll-snap-align: start;
+  background-color: #fff;
+  padding: 40px 20px;
+  width: 200px;
+  flex-shrink: 0;
+
+  &__img {
+    width: 80px;
+
+    &-wrap {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+    }
+  }
+
+
+  &__temp {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: -11px;
+  }
+
+  &__main {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    min-height: 66px;
+    text-transform: capitalize;
+  }
+
+  &__time {
+    padding-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__humidity {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    font-size: 14px;
+  }
+}
+
 
