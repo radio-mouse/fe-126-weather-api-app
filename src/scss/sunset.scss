@@ -1,0 +1,26 @@
+.sunset {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48px;
+
+  &-wrap {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__sun {
+    width: 20px;
+  }
+
+  &__arrow {
+    width: 10px;
+
+    &_up {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+  }
+}

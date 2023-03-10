@@ -1,0 +1,19 @@
+.widget {
+  max-width: 600px;
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.text {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+

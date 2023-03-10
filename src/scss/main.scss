@@ -1,35 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 @import "reset";
 @import "vars";
+@import "animation";
+@import "widget";
+@import "sunset";
 
 .body {
   align-items: center;
   background-color: $bg;
+  color: $font;
   display: flex;
+  font-family: 'Open Sans', sans-serif;
   justify-content: center;
   padding: 24px;
-}
-
-.fade {
-  opacity: 0;
-  transition: $transition;
-}
-
-
-
-.fade-out {
-  animation: fade-out .5s;
-}
-
-.fade-in {
-  animation: fade-in .5s;
-}
-
-@keyframes fade-out {
-  from { opacity: 1 }
-  to { opacity: 0 }
-}
-
-@keyframes fade-in {
-  from { opacity: 0 }
-  to { opacity: 1 }
 }

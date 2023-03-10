@@ -3,7 +3,7 @@ import { FADE_IN, FADE_OUT } from './constants';
 
 const loader = document.createElement('img');
 
-export const createLoader = () => {
+const createLoader = () => {
   loader.setAttribute('src', loaderImg);
   loader.classList.add(FADE_IN);
   document.body.append(loader);
@@ -18,3 +18,5 @@ export const removeLoader = () => new Promise((resolve) => {
     resolve();
   });
 });
+
+export default createLoader;
