@@ -10,11 +10,11 @@ const getWeather = async ({ latitude, longitude }) => {
 
   await removeLoader();
 
-  if (!data.ok) {
+  if (data.ok) {
+    createWidget(json);
+  } else {
     create404();
   }
-
-  createWidget(json);
 };
 
 export default getWeather;

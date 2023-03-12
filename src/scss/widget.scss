@@ -1,6 +1,7 @@
 .widget {
   max-width: 600px;
   width: 100%;
+  position: relative;
 }
 
 .header {
@@ -78,3 +79,29 @@
 }
 
 
+.button {
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: -58px;
+  border: none;
+  padding: 12px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  &__img {
+    transform: rotate(90deg);
+
+    &_next {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &_next {
+    left: unset;
+    right: -58px;
+  }
+}

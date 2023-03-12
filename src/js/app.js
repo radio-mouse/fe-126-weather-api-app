@@ -1,5 +1,6 @@
+import { createLoader } from './loader';
+
 import getWeather from './api';
-import createLoader from './loader';
 
 document.addEventListener('DOMContentLoaded', () => {
   createLoader();
